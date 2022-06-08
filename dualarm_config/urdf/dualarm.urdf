@@ -653,7 +653,7 @@
   </joint>
 
   <link
-    name="mani1_eef">
+    name="mani1_eff">
     <inertial>
       <origin
         xyz="0.00052359 -0.00015741 0.046995"
@@ -701,12 +701,12 @@
     name="mani1_joint7"
     type="revolute">
     <origin
-      xyz="0 -0.167 0.0"
+      xyz="0 -0.175 0.0"
       rpy="1.5708 0 0" />
     <parent
       link="mani1_link7" />
     <child
-      link="mani1_eef" />
+      link="mani1_eff" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -793,7 +793,7 @@
 
 <!-- Mani2 link1 -->
   <link
-    name="mani2_link1">
+    name="mani2_link2">
     <inertial>
       <origin
         xyz="0.00025963 -4.4216E-06 0.06121"
@@ -848,7 +848,7 @@
     <parent
       link="mani2_base" />
     <child
-      link="mani2_link1" />
+      link="mani2_link2" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -860,7 +860,7 @@
 
 <!-- Mani link2 -->
   <link
-    name="mani2_link2">
+    name="mani2_link3">
     <inertial>
       <origin
         xyz="6.849E-05 -0.015121 0.063905"
@@ -907,9 +907,9 @@
       xyz="0 0 0.125"
       rpy="0 0 1.5708" />
     <parent
-      link="mani2_link1" />
-    <child
       link="mani2_link2" />
+    <child
+      link="mani2_link3" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -921,7 +921,7 @@
 
   <!-- Mani2 link3 -->
   <link
-    name="mani2_link3">
+    name="mani2_link4">
     <inertial>
       <origin
         xyz="-0.00018188 -0.11832 0.041393"
@@ -972,9 +972,9 @@
       xyz="0 -0.069 0.0675"
       rpy="-1.5708 0 0" />
     <parent
-      link="mani2_link2" />
-    <child
       link="mani2_link3" />
+    <child
+      link="mani2_link4" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -986,7 +986,7 @@
 
 <!-- Mani2 link4 -->
   <link
-    name="mani2_link4">
+    name="mani2_link5">
     <inertial>
       <origin
         xyz="-8.8281E-05 -0.009886 0.069843"
@@ -1026,7 +1026,7 @@
     </collision>
   </link>
 
-  <gazebo reference="mani2_link4">            
+  <gazebo reference="mani2_link5">            
     		<material>Gazebo/White</material>
   </gazebo>
 
@@ -1037,9 +1037,9 @@
       xyz="0 -0.2197 0.069"
       rpy="1.5708 0 0" />
     <parent
-      link="mani2_link3" />
-    <child
       link="mani2_link4" />
+    <child
+      link="mani2_link5" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -1050,7 +1050,7 @@
   </joint>
 <!--Mani2 link5-->
   <link
-    name="mani2_link5">
+    name="mani2_link6">
     <inertial>
       <origin
         xyz="0.00019482 -0.11792 0.037427"
@@ -1090,7 +1090,7 @@
     </collision>
   </link>
 
-  <gazebo reference="mani2_link5">     
+  <gazebo reference="mani2_link6">     
     		<material>Gazebo/White</material>
   </gazebo>
 
@@ -1101,9 +1101,9 @@
       xyz="0 -0.061 0.0753"
       rpy="-1.5708 0 0" />
     <parent
-      link="mani2_link4" />
-    <child
       link="mani2_link5" />
+    <child
+      link="mani2_link6" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -1115,7 +1115,7 @@
 
 <!-- Mani2 link6 -->
   <link
-    name="mani2_link6">
+    name="mani2_link7">
     <inertial>
       <origin
         xyz="1.0745E-05 0.030079 0.16626"
@@ -1155,7 +1155,7 @@
     </collision>
   </link>
 
-  <gazebo reference="mani2_link6">              
+  <gazebo reference="mani2_link7">              
     		<material>Gazebo/White</material>
   </gazebo>
 
@@ -1166,9 +1166,9 @@
       xyz="0 -0.2 0.061"
       rpy="1.5708 0 0" />
     <parent
-      link="mani2_link5" />
-    <child
       link="mani2_link6" />
+    <child
+      link="mani2_link7" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -1180,7 +1180,7 @@
 
 <!-- Mani2 link7 -->
   <link
-    name="mani2_link7">
+    name="mani2_link8">
     <inertial>
       <origin
         xyz="-0.00010944 -0.0075746 -0.032739"
@@ -1231,9 +1231,9 @@
       xyz="0 0.032 0.25"
       rpy="-1.5708 0 0" />
     <parent
-      link="mani2_link6" />
-    <child
       link="mani2_link7" />
+    <child
+      link="mani2_link8" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -1295,7 +1295,7 @@
       xyz="0 -0.0405 -0.032"
       rpy="1.5708 0 0" />
     <parent
-      link="mani2_link7" />
+      link="mani2_link8" />
     <child
       link="mani2_eef" />
     <axis
